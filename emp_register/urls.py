@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from employee.views import test   # ✅ Import function directly
+from employee import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', test, name='home'), 
-       path('index/', test, name='index'),  # ✅ Use function directly
+    path('', views.test, name='home'),
+    path('index/', views.test, name='index'),
 ]

@@ -11,10 +11,19 @@
             welcome Employee
         </h1>
         <div>
-            <form action="index/" method="post">
+            <form action="index/" method="POST">
                 {% csrf_token %}
-                <input type="text" id="" placeholder="Enter your name" name="emp_name"></br>
-                <input type="text" id="" name="emp_id" maxlength="4" placeholder="Enter your id"></br>
+                <input type="text" id="" placeholder="Enter your name" name="emp_name" required></br>
+
+                <input type="number" id="" name="emp_id" maxlength="4" placeholder="Enter your id" required></br>
+
+                <input type="number" id="" placeholder="Enter your phone number" name="emp_phone" required></br>
+
+                <input type="text" id="" placeholder="Enter your address" name="emp_address" required></br>
+
+                <input type="text" id="" placeholder="Enter your department name" name="emp_department" required></br>
+
+                <input type="checkbox" id="" placeholder="working" name="emp_working" required></br>
 
                 <button name="submit" style="text-emphasis-color:blue;">clickhere</button></br>
             </form>
